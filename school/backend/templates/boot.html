@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boot</title>
+    <link rel="stylesheet" href="{% static 'boot/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'boot/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'boot/css/bootstrap-grid.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'boot/css/bootstrap-grid.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'boot/css/bootstrap-reboot.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'boot/css/bootstrap-reboot.min.css' %}"
+    />
+  </head>
+  <body>
+    <div class="d-flex justify-content-start ">
+      <div  class="p-3" >
+        <a href="http://127.0.0.1:8000/stuapp/shome/"> Home </a>
+      </div>
+      <div  class="p-3" >
+        <a href="http://127.0.0.1:8000/stuapp/slist/"> List </a>
+      </div>
+      <div  class="p-3">
+        <a href="http://127.0.0.1:8000/stuapp/screate/"> Create </a>
+      </div>
+      <div  class="p-3">
+        <a href="http://127.0.0.1:8000/stuapp/supdate/"> Update </a>
+      </div>
+      <div  class="p-3" >
+        <a href="http://127.0.0.1:8000/stuapp/sdelete/"> Delete </a>
+      </div>
+    </div>
+    {% block content %} {% endblock %}
+  </body>
+</html>
